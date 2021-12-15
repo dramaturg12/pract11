@@ -1,0 +1,11 @@
+lst=[]
+cntlst=[0 for i in range(max(lst)+1)]
+out=[]
+for i in lst:
+  cntlst[i]+=1
+for i in range(len(cntlst)):
+  if cntlst[i] != 0:
+    out += [i for j in range(cntlst[i])]
+    
+    
+Алгоритм осуществляет две итерации по n элементов для списков и итерацию k элементов словаря, поэтому сложность равна О(n+n+k)=O(n+k)
